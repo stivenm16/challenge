@@ -81,7 +81,7 @@ button:focus-visible {
   justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.795);
   border-radius: 0.5rem;
-  box-shadow: 10px 22px 93px 0px rgba(0, 0, 0, 0.418);
+  box-shadow: 10px 22px 93px 10px rgba(0, 0, 0, 0.486);
 }
 
 #main-title {
@@ -103,9 +103,13 @@ button:focus-visible {
   border: none;
   font-size: 12px;
   background-color: transparent;
-  border: 0.1rem solid darkcyan;
   border-radius: 8px;
   color: var(--second-color);
+  box-shadow: 5px 7px 20px 3px rgba(122, 122, 122, 0.534);
+  border: 0.1rem solid transparent;
+}
+.input-login:focus {
+  border: 0.1rem solid darkcyan;
 }
 
 .submit-btn {
@@ -137,6 +141,7 @@ button:focus-visible {
 
 .custom-li button {
   margin-bottom: 3rem;
+  min-width: 10rem;
 }
 
 .custom-lu {
@@ -152,4 +157,17 @@ button:focus-visible {
 .grid-ul h2 {
   margin-bottom: 5rem;
   padding-right: 3rem;
+}
+
+.logout {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: none;
+  background-color: rgba(240, 248, 255, 0.432);
+  transition: 0.5s;
+}
+
+.logout:hover {
+  box-shadow: 5px 0px 20px 10px rgba(56, 38, 80, 0.753);
 }

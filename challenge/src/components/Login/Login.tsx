@@ -44,10 +44,10 @@ export default function Login() {
       setTimeout(() => {
         db.push(newUser);
         alert("Usuario creado");
-        setIsNew(!isNew);
+        setIsNew(false);
       }, 500);
-    }
-    if (isNew) {
+    } else if (key == 3) {
+      setIsNew(true);
     }
   };
 
@@ -82,7 +82,7 @@ export default function Login() {
               >
                 Sign in
               </button>
-              <button id="create-acc" onClick={(e) => handleSubmit(e, 2)}>
+              <button id="create-acc" onClick={(e) => handleSubmit(e, 3)}>
                 ¿Deseas crear una cuenta?
               </button>
             </>

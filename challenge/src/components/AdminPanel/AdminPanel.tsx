@@ -8,7 +8,6 @@ export default function AdminPanel() {
   const check = () => {
     setIsCheck(!isCheck);
   };
-  console.log(isCheck, "state");
   return (
     <div className="grid-companies">
       {dbCompanies.map((company) => (
