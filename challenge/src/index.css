@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.363);
+  background-color: #10237771;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --first-color: #10237771;
+  --second-color: #07134be7;
+  --third-color: #adacacb0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  outline: none;
+}
+button:hover {
+  border-color: none;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 0 4rem;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.795);
+  border-radius: 0.5rem;
+  box-shadow: 10px 22px 93px 0px rgba(0, 0, 0, 0.418);
+}
+
+#main-title {
+  color: var(--first-color);
+  font-weight: bold;
+}
+
+.form-schema {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 17rem;
+}
+
+.input-login {
+  border-radius: 5px;
+  outline: none;
+  padding: 15px;
+  border: none;
+  font-size: 12px;
+  background-color: transparent;
+  border: 0.1rem solid darkcyan;
+  border-radius: 8px;
+  color: var(--second-color);
+}
+
+.submit-btn {
+  margin-top: 2.5rem;
+  background-color: var(--second-color);
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+#create-acc {
+  background-color: transparent;
+  font-size: 0.8rem;
+  border: none;
+  color: var(--first-color);
+  font-weight: 600;
+}
+
+.custom-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.custom-li li {
+  margin-right: 5rem;
+}
+
+.custom-li button {
+  margin-bottom: 3rem;
+}
+
+.custom-lu {
+  margin-right: 5rem;
+}
+
+.grid-companies {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.grid-ul h2 {
+  margin-bottom: 5rem;
+  padding-right: 3rem;
+}
